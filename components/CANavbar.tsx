@@ -7,7 +7,6 @@ const navLinks = [
   { label: "Home",     href: "#home" },
   { label: "About",   href: "#about" },
   { label: "Benefits", href: "#benefits" },
-  { label: "Apply",   href: "#apply" },
 ];
 
 export default function CANavbar() {

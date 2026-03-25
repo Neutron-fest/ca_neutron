@@ -14,6 +14,8 @@ import { Area, AreaChart, CartesianGrid } from "recharts";
 import { type ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { ScrollRevealCards } from "@/components/scroll-reveal-cards";
 import CAFooter from "@/components/CAFooter";
+import Image from "next/image";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -85,10 +87,17 @@ export default function CampusAmbassadorPage() {
         <div className="h-screen w-full pointer-events-none" aria-hidden />
         <section
           id="home"
-          className="fixed top-0 left-0 w-full h-screen z-0 overflow-hidden flex flex-col"
+          className="fixed top-0 left-0 w-full h-screen z-0 overflow-hidden flex-col hidden md:block"
+        >
+          <CAFooter />
+        </section>
+
+        <section
+          id="home"
+          className="fixed top-0 left-0 w-full h-screen z-0 overflow-hidden flex flex-col md:hidden"
         >
           <div
-            className="absolute inset-0"
+            className="absolute inset-0 md:hidden"
             style={{
               backgroundImage: "url('https://ik.imagekit.io/YatharthKhandelwal/COMPEBG.png')",
               backgroundSize: "cover",
@@ -264,7 +273,21 @@ export default function CampusAmbassadorPage() {
           </div>
         </section>
         
-        <CAFooter />
+        <section>
+          <div className="relative z-10 w-full px-10 md:px-16 py-6 flex items-center justify-between border-t border-white/10">
+            <Link href="/" className="inline-flex items-center gap-2 text-white/60 text-sm font-semibold tracking-widest uppercase hover:text-white transition-colors">
+              <Image src="/logo.jpeg" alt="Neutron" width={20} height={20} className="rounded-full" />
+              Neutron
+            </Link>
+
+            <nav className="flex items-center gap-6 text-[11px] text-white/40 tracking-widest uppercase">
+              <Link href="https://www.instagram.com/neutronfest/" target="_blank" className="hover:text-white transition-colors">Instagram</Link>
+              <span className="text-white/20">|</span>
+              <Link href="https://www.linkedin.com/company/neutronfest" target="_blank" className="hover:text-white transition-colors">LinkedIn</Link>
+              <span className="text-white/20">|</span>
+            </nav>
+        </div>
+      </section>
 
       </main>
     </div>
