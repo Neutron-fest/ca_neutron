@@ -87,12 +87,12 @@ export default function CampusAmbassadorPage() {
         <div className="h-screen w-full pointer-events-none" aria-hidden />
         <section
           id="home"
-          className="fixed top-0 left-0 w-full h-screen z-0 overflow-hidden flex-col hidden md:block"
+          className="fixed top-0 left-0 w-full h-screen z-0 overflow-hidden flex-col"
         >
           <CAFooter />
         </section>
 
-        <section
+        {/* <section
           id="home"
           className="fixed top-0 left-0 w-full h-screen z-0 overflow-hidden flex flex-col md:hidden"
         >
@@ -151,7 +151,7 @@ export default function CampusAmbassadorPage() {
           <div className="relative z-[3] w-full px-8 pb-7 flex items-end justify-between">
             <span className="text-[11px] text-white/30 font-mono tracking-widest">IND · GLOBAL</span>
           </div>
-        </section>
+        </section> */}
 
         <ScrollText
           label="About Neutron"

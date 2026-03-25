@@ -17,7 +17,7 @@ export default function CAFooter() {
       </div>
       <div className="relative flex-1 flex items-center">
 
-        <div className="absolute inset-y-0 left-0 w-1/2 pointer-events-none select-none">
+        <div className="absolute inset-y-0 left-0 w-full md:w-1/2 pointer-events-none select-none">
           <Image
             src="https://ik.imagekit.io/YatharthKhandelwal/ASTR.png"
             alt="Campus Ambassador"
@@ -29,7 +29,7 @@ export default function CAFooter() {
             src="https://ik.imagekit.io/YatharthKhandelwal/ASTR.png"
             alt="Campus Ambassador"
             fill
-            className="object-cover md:hidden object-right"
+            className="object-cover md:hidden opacity-30 left-0 scale-100 origin-left"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black" />
