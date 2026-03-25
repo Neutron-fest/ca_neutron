@@ -136,9 +136,9 @@ export default function ThankYouPage() {
           {/* Info cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
             {[
-              { icon: "📬", label: "Check your inbox", desc: "Look for our confirmation email" },
-              { icon: "📱", label: "Stay connected", desc: "Follow @neutronfest on Instagram" },
-              { icon: "⏳", label: "Patience pays", desc: "Results within 5–7 business days" },
+              { label: "Check your inbox", desc: "Your confirmation and next steps will land in your inbox soon." },
+              { label: "Stay connected", desc: "Follow @neutronfest on Instagram" },
+              { label: "Patience pays", desc: "Results within 5–7 business days" },
             ].map((card) => (
               <div
                 key={card.label}

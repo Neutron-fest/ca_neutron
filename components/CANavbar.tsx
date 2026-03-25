@@ -128,7 +128,7 @@ export default function CANavbar() {
         <div className={`hidden sm:block w-px bg-white/10 self-stretch mx-2 transition-all duration-500 ${scrolled ? "opacity-0 w-0 mx-0" : "opacity-100"}`} />
 
         <a
-          href="#apply"
+          href="/register"
           className={`
             shrink-0 rounded-full font-semibold text-sm
             bg-white text-black
@@ -179,7 +179,7 @@ export default function CANavbar() {
           );
         })}
         <a
-          href="#apply"
+          href="/register"
           onClick={() => setMobileOpen(false)}
           className="block mx-3 mb-3 mt-1 px-5 py-2.5 rounded-full bg-white text-black text-sm font-semibold text-center hover:bg-blue-100 transition-colors"
         >

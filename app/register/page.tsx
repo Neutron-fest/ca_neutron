@@ -24,7 +24,7 @@ interface FormErrors {
   [key: string]: string;
 }
 
-const GENDER_OPTIONS = ["Male", "Female", "Rather not to say"];
+const GENDER_OPTIONS = ["Male", "Female"];
 const YEAR_OPTIONS = ["1st Year", "2nd Year", "3rd Year", "4th Year", "5th Year +"];
 
 const inputBase =
